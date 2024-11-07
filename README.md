@@ -1,7 +1,7 @@
 # IlustraHub
 
 ### ¿Para qué es esta propuesta?
-Inspirar a ilustradores indie con una página que recopile artistas de animación e ilustración indie, categorizados por técnicas y tipos de obra, en un formato más experimental enfocado en el storytelling y no en un despliegue rígido.
+Inspirar a ilustradores indie con una página que recopile artistas de animación y arte, categorizados por técnicas, tipos de obra,etc. En un formato más experimental enfocado en el storytelling y no en un despliegue rígido.
 
 ### ¿Para quiénes es esta propuesta?
 
@@ -28,3 +28,6 @@ Inspirar a ilustradores indie con una página que recopile artistas de animació
 
 * **Blush - Sad Snowman Collection**: [https://blush.design/collections/FJEQPrVVcZsZDvzyOuhu/sad-snowman](https://blush.design/collections/FJEQPrVVcZsZDvzyOuhu/sad-snowman)  
   Aunque se centra en la creación de ilustraciones con elementos predefinidos, es una excelente referencia en su forma de destacar a los ilustradores con una imagen principal y colecciones de ilustraciones más pequeñas.
+
+![moodboard ilustrahub](https://github.com/user-attachments/assets/5e478b8c-7347-4e6c-96df-ba8707a76fb9)
+
