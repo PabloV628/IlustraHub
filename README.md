@@ -14,10 +14,11 @@ Inspirar a ilustradores indie con una página que recopile artistas de animació
 ### ¿Qué existe que es similar a la propuesta?
 
 
-* **YukoArt**: [https://yukoart.com/](https://yukoart.com/) me gusta como esta artista en la página principal siempre despliega una obra al azar.
+* **YukoArt**: [https://yukoart.com/](https://yukoart.com/)
+Esta artista presenta siempre una obra al azar en la página principal en un tamaño grande, lo que hace la experiencia dinámica.
 
 * **James Jean**: [https://www.jamesjean.com/](https://www.jamesjean.com/
-Portafolio de arte, me gusta mucho cómo la pantalla principal es solo una imagen que va cambiando con el tiempo. Además me gusta como la pestaña para ver otras obras está al lado y categorizada por año, y después esas páginas tiene despliegue vertical.
+La pantalla principal (index) muestra una imagen que cubre toda la pantalla. Además, me gusta cómo la pestaña para explorar otras obras está situada al lado y categorizada por año, con un despliegue vertical en cada página individual.
 
 * **Justine Soulie**: [https://justinesoulie.fr/?ref=landing.love](https://justinesoulie.fr/?ref=landing.love)  
   Minimalista y con un despliegue horizontal simple. Aunque limitado en contenido y categorías, enriquece la experiencia con animaciones y un atractivo diseño horizontal en la visualización de obras.
