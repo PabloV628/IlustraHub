@@ -5,11 +5,11 @@ Inspirar a ilustradores indie con una página que recopile artistas de animació
 
 ### ¿Para quiénes es esta propuesta?
 
-* **Ilustradores o diseñadores indie**: De entre 20 y 30 años, en búsqueda de inspiración a través del trabajo de otros artistas.
+* **Personas con interés en el arte** (Poco probable): Como artistas novatos que desean aprender y explorar estilos, o aficionados con cierto interés que podrían considerar comisionar obras o pequeños encargos.
 
-* **Personas con interés en el arte**: Como artistas novatos que desean aprender y explorar estilos, o aficionados con cierto interés que podrían considerar comisionar obras o pequeños encargos.
+* **Ilustradores o diseñadores indie** (Más probable): De entre 20 y 30 años, que simplemente buscan de inspiración a través del trabajo de otros artistas.
 
-* **Empresas**: No directamente relacionadas con el arte que buscan ilustraciones o el trabajo de un diseñador.
+* **Empresas** (Poco probable): No directamente relacionadas con el arte que buscan ilustraciones o el trabajo de un diseñador.
 
 ### ¿Qué existe que es similar a la propuesta?
 
