@@ -10,4 +10,8 @@
 ![tohdraws-5](https://github.com/user-attachments/assets/a714f9c4-0f02-4152-8118-94575057d625)
 ![toonimated-5](https://github.com/user-attachments/assets/7edb81a7-b1bc-42ce-90ac-3ef63c08010b)
 
+![bugambilia](https://github.com/user-attachments/assets/514b4958-92a7-4b6f-85e2-521cfc3c0b97)
+![proyectoposter](https://github.com/user-attachments/assets/89253318-9949-46ad-9f21-def2689660b0)
+![study-3](https://github.com/user-attachments/assets/b1dd6005-6b6e-495d-854f-8c6c479557e3)
+
 
