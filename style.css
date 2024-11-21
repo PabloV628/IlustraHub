@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 :root {
-  --bs-danger-rgb: 202, 81, 101;
+
+  --bs-danger-rgb: 246,237,228;
   --bs-dark-rgb: 40, 27, 30  ; 
-  --bs-info-rgb: 37, 150, 190;
-  --bs-font-sans-serif:"Leckerli One", cursive;
+  --bs-primary-rgb: 37, 150, 190;
+  --bs-font-sans-serif:"Roboto Slab", serif;
   --bs-body-font-family: var(--bs-font-sans-serif);
 }
 
 .display-1{
   font-size: calc(1.625rem + 5vw);
-  font-weight: 150;
+
 } 
 
   body {
-    background-image: url('https://github.com/user-attachments/assets/6821aefa-9a99-4677-bf74-740480d8e9ee');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    cursor: 📌, auto;
+    cursor: "📌", auto;
     font-weight: 100;
 }
 
@@ -60,5 +59,19 @@ font-weight: 50;
 
 .container-a:{
 font-weight: 50;
+}
+
+
+.active: {
+  font-weight: bold;
+}
+
+.imagen-fondo {
+  position: absolute;
+  top: 85%;   /* Centra la imagen verticalmente */
+  left: 50%;  /* Centra la imagen horizontalmente */
+  transform: translate(-50%, -50%); /* Ajuste para centrarla exactamente */
+  z-index: -1; /* Envía la imagen al fondo */
+  opacity: 0.7; /* Opcional: para darle un efecto de transparencia */
 }
 
