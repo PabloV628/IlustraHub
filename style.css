@@ -8,30 +8,16 @@
   --bs-body-font-family: var(--bs-font-sans-serif);
 }
 
-.display-1{
-  font-size: calc(1.625rem + 5vw);
-
-} 
-
-  body {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    cursor: "📌", auto;
-    font-weight: 100;
-}
 
 .cards-container {
     padding-top: 100px; /* el encabezado no se tapa */
-    position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
 .card {
     position: absolute;
-    width: 250px; 
+    width: 200px; 
     transition: transform 0.6s ease, z-index 0s; 
     border: none; 
     background: transparent; 
@@ -52,26 +38,3 @@
     transform: scale(1.05); 
     z-index: 10; 
 }
-
-.container:{
-font-weight: 50;
-}
-
-.container-a:{
-font-weight: 50;
-}
-
-
-.active: {
-  font-weight: bold;
-}
-
-.imagen-fondo {
-  position: absolute;
-  top: 85%;   /* Centra la imagen verticalmente */
-  left: 50%;  /* Centra la imagen horizontalmente */
-  transform: translate(-50%, -50%); /* Ajuste para centrarla exactamente */
-  z-index: -1; /* Envía la imagen al fondo */
-  opacity: 0.7; /* Opcional: para darle un efecto de transparencia */
-}
-
