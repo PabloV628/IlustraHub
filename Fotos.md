@@ -27,4 +27,10 @@
 ![ianhig](https://github.com/user-attachments/assets/a0475d36-439a-4817-bde8-4db03470b038)
 
 
+![ismael](https://github.com/user-attachments/assets/f22a49ed-0565-4caf-b0c2-cfdd1f552bae)
+![escritora](https://github.com/user-attachments/assets/465c280c-ab07-45c0-bd85-c60d6290efc9)
+![zoo](https://github.com/user-attachments/assets/fe1ca430-061c-4d38-a4bf-b3a560659ee2)
+![polly](https://github.com/user-attachments/assets/73b79b40-54ae-4b30-94a1-34896e383a98)
+![demon](https://github.com/user-attachments/assets/04706b0a-7ee2-4190-bbf2-fd53e9b4a4d5)
+
 
