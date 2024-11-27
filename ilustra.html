@@ -48,8 +48,7 @@
         <!-- Meta Tags Generated with https://metatags.io -->
         <link href="style.css" rel="stylesheet" />
     </head>
-
-    <body class="text-bg bg-opacity-0 bg-danger">
+  <body class="text-bg bg-opacity-0 bg-danger">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-danger">
                 <a class="navbar-brand fs-3 text-primary" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-brush-fill me-2" viewBox="0 0 16 16">
@@ -106,74 +105,87 @@
             </button>
         </header>
 
-        <header class="container">
-            <h1 class="display-1 my-3"></h1>
-        </header>
+       <header class="container">
+    <h1 class="display-1 my-3">Galería de Imágenes</h1>
+</header>
 
-        <div class="cards-container">
-            <main class="row align-items-center"></main>
+<div class="cards-container container">
+    <main class="row align-items-center g-4">
+        <div class="col" class="card">
+            <a target="_blank">
+                <img src="https://github.com/user-attachments/assets/f22a49ed-0565-4caf-b0c2-cfdd1f552bae" alt="Imagen 1" class="img-fluid rounded">
+            </a>
         </div>
-
+        <div class="col" class="card">
+            <a target="_blank">
+                <img src="https://github.com/user-attachments/assets/fe1ca430-061c-4d38-a4bf-b3a560659ee2" alt="Imagen 2" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="col" class="card">
+            <a target="_blank">
+                <img src="https://github.com/user-attachments/assets/73b79b40-54ae-4b30-94a1-34896e383a98" alt="Imagen 3" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="col" class="card">
+            <a target="_blank">
+                <img src="https://github.com/user-attachments/assets/04706b0a-7ee2-4190-bbf2-fd53e9b4a4d5" alt="Imagen 4" class="img-fluid rounded">
+            </a>
+        </div>
+        <div class="col" class="card">
+            <a target="_blank">
+                <img src="https://github.com/user-attachments/assets/465c280c-ab07-45c0-bd85-c60d6290efc9" alt="Imagen 4" class="img-fluid rounded">
+            </a>
+        </div>
+    </main>
+</div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        <script>
-            // Variables que no cambian:
-            const nombre = "Ilustra Hub";
-            const autoria = document.querySelector("h1");
-            autoria.innerHTML = '<a class=" text-primary underline-opcaity-0 link-underline-opacity-0" style="font-size: 250px;">IlustraHub</a>';
+            <script>
+                //unas variables que no varían, que son constantes:
 
-            const principal = document.querySelector("main");
-            const seleccion = document.querySelector("select");
+                const nombre = "Mis ilustraciones";
 
-            // Función para obtener los datos del JSON
-            async function astros() {
-                const consulta = await fetch("https://raw.githubusercontent.com/PabloV628/Dno096_12/refs/heads/main/datos.json");
-                const data = await consulta.json();
+                const autoria = document.querySelector("h1");
 
-                data.forEach((d, i) => {
-                    const card = document.createElement("div");
-                    card.classList.add("card", `${d.signo}`);
+               autoria.innerHTML = '<a class=" text-primary">Mis ilustraciones</a>';
 
-                    // Posicionamiento aleatorio de las tarjetas
-                    const topPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
-                    const leftPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
-                    const cardHeight = Math.random() * 200 + 150; // Altura aleatoria entre 150 y 350px
-                    const cardWidth = Math.random() * 200 + 150; // Ancho aleatorio entre 150 y 350px
 
-                    card.style.top = `${topPosition}%`;
-                    card.style.left = `${leftPosition}%`;
-                    card.style.height = `${cardHeight}px`;
-                    card.style.width = `${cardWidth}px`;
+                const principal = document.querySelector("main");
 
-                    card.innerHTML = `
-                        <img src="${d.foto}" class="card-img-top" alt="${d.fecha}">
-                        <div class="card-body">
-                            <p class="card-text">
-                            </p>
-                        </div>
-                    `;
-                    principal.appendChild(card);
-                });
+                const seleccion = document.querySelector("select");
 
-                seleccionables();
-            }
+                //acá voy por el JSON
 
-            astros().catch((error) => console.error(error));
+                async function astros() {
+                    const consulta = await fetch("https://raw.githubusercontent.com/PabloV628/Dno096_12/refs/heads/main/datos.json");
+                    const data = await consulta.json();
+                    console.log(data);
 
-            // Función para filtrar las tarjetas por categoría
-            function seleccionables() {
-                seleccion.addEventListener("change", (e) => {
-                    document.querySelectorAll(".card").forEach((t) => t.classList.add("d-none"));
-                    const valor = e.target.value;
-                    if (valor !== "todos") {
-                        document.querySelectorAll(`.${valor}`).forEach((t) => t.classList.remove("d-none"));
-                    } else {
-                        document.querySelectorAll(".card").forEach((t) => t.classList.remove("d-none"));
-                    }
-                });
-            }
+                    
 
-        </script>
+                    seleccionables();
+                }
+
+                astros().catch((error) => console.error(error));
+
+                //lo que sigue es una función que ejecuto dentro de astros()
+
+                var valor;
+
+                function seleccionables() {
+                    seleccion.addEventListener("change", (e) => {
+                        document.querySelectorAll(".col").forEach((t) => t.classList.add("d-none"));
+                        valor = e.target.value;
+                        if (valor !== "todos") {
+                            document.querySelectorAll(`.${valor}`).forEach((t) => t.classList.remove("d-none"));
+                        } else {
+                            document.querySelectorAll("div").forEach((t) => t.classList.remove("d-none"));
+                        }
+                    });
+                }
+            </script>
+        </body>
+    </body>
 </html>

@@ -48,8 +48,7 @@
         <!-- Meta Tags Generated with https://metatags.io -->
         <link href="style.css" rel="stylesheet" />
     </head>
-
-    <body class="text-bg bg-opacity-0 bg-danger">
+  <body class="text-bg bg-opacity-0 bg-danger">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-danger">
                 <a class="navbar-brand fs-3 text-primary" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-brush-fill me-2" viewBox="0 0 16 16">
@@ -101,79 +100,65 @@
                 </div>
             </nav>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </header>
 
         <header class="container">
-            <h1 class="display-1 my-3"></h1>
-        </header>
+                <h1 class="display-1 my-3"></h1>
+            </header>
 
-        <div class="cards-container">
-            <main class="row align-items-center"></main>
-        </div>
-
-
+        <div class="container text-center ">
+                <main class="row row-cols-lg-11 align-items-center justify-content-center"></main>
+            </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-        <script>
-            // Variables que no cambian:
-            const nombre = "Ilustra Hub";
-            const autoria = document.querySelector("h1");
-            autoria.innerHTML = '<a class=" text-primary underline-opcaity-0 link-underline-opacity-0" style="font-size: 250px;">IlustraHub</a>';
+            <script>
+                //unas variables que no varían, que son constantes:
 
-            const principal = document.querySelector("main");
-            const seleccion = document.querySelector("select");
+                const nombre = "Artistas Destacados";
 
-            // Función para obtener los datos del JSON
-            async function astros() {
-                const consulta = await fetch("https://raw.githubusercontent.com/PabloV628/Dno096_12/refs/heads/main/datos.json");
-                const data = await consulta.json();
+                const autoria = document.querySelector("h1");
+            autoria.innerHTML = '<a class=" text-primary">Artistas Destacados</a>';
 
-                data.forEach((d, i) => {
-                    const card = document.createElement("div");
-                    card.classList.add("card", `${d.signo}`);
+                const principal = document.querySelector("main");
 
-                    // Posicionamiento aleatorio de las tarjetas
-                    const topPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
-                    const leftPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
-                    const cardHeight = Math.random() * 200 + 150; // Altura aleatoria entre 150 y 350px
-                    const cardWidth = Math.random() * 200 + 150; // Ancho aleatorio entre 150 y 350px
+                const seleccion = document.querySelector("select");
 
-                    card.style.top = `${topPosition}%`;
-                    card.style.left = `${leftPosition}%`;
-                    card.style.height = `${cardHeight}px`;
-                    card.style.width = `${cardWidth}px`;
+                //acá voy por el JSON
 
-                    card.innerHTML = `
-                        <img src="${d.foto}" class="card-img-top" alt="${d.fecha}">
-                        <div class="card-body">
-                            <p class="card-text">
-                            </p>
-                        </div>
-                    `;
-                    principal.appendChild(card);
-                });
+                async function astros() {
+                    const consulta = await fetch("https://raw.githubusercontent.com/PabloV628/Dno096_12/refs/heads/main/datos.json");
+                    const data = await consulta.json();
+                    console.log(data);
 
-                seleccionables();
-            }
+                    data.forEach(
+                        (d, i) =>
+                            (principal.innerHTML += `
+                                <div class="${d.signo} col">
+                    <div class="card bg-danger h-100">
+                    <img src="${d.foto2}" class="card-img-top" alt="${d.fecha}">
 
-            astros().catch((error) => console.error(error));
+                    <div class="card shadow-sm">
+                    <div class="card-body">
+                    <p class= "card-text"><a href="single.html?data=${i}"
+                     class="link-danger link-offset-2
+                     link-offset-3-hover
+                     link-underline link-underline-opacity-0
+                     link-underline-opacity-75-hover stretched-link">${d.nombre}
+                     </a></p> <div class="d-flex justify-content-around align-items-center">
+                     </div>
+                     </div>
+                     </div>`)
+                    );
 
-            // Función para filtrar las tarjetas por categoría
-            function seleccionables() {
-                seleccion.addEventListener("change", (e) => {
-                    document.querySelectorAll(".card").forEach((t) => t.classList.add("d-none"));
-                    const valor = e.target.value;
-                    if (valor !== "todos") {
-                        document.querySelectorAll(`.${valor}`).forEach((t) => t.classList.remove("d-none"));
-                    } else {
-                        document.querySelectorAll(".card").forEach((t) => t.classList.remove("d-none"));
-                    }
-                });
-            }
 
-        </script>
+                     seleccionables();
+                }
+
+                astros().catch((error) => console.error(error));
+
+               
+            </script>
+        </body>
+    </body>
 </html>
