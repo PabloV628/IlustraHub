@@ -17,7 +17,7 @@ Inspirar a ilustradores indie con una página que recopile artistas de animació
 * **YukoArt**: [https://yukoart.com/](https://yukoart.com/)
 Esta artista presenta siempre una obra al azar en la página principal en un tamaño grande, lo que hace la experiencia dinámica.
 
-* **James Jean**: [https://www.jamesjean.com/](https://www.jamesjean.com/
+* **James Jean**: [https://www.jamesjean.com/](https://www.jamesjean.com/)
 La pantalla principal (index) muestra una imagen que cubre toda la pantalla. Además, me gusta cómo la pestaña para explorar otras obras está situada al lado y categorizada por año, con un despliegue vertical en cada página individual.
 
 * **Justine Soulie**: [https://justinesoulie.fr/?ref=landing.love](https://justinesoulie.fr/?ref=landing.love)  
