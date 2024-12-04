@@ -34,9 +34,6 @@
 ![demon](https://github.com/user-attachments/assets/04706b0a-7ee2-4190-bbf2-fd53e9b4a4d5)
 
 ![fotodeperfil](https://github.com/user-attachments/assets/8bc0b72f-59d2-4b48-b65c-2b62e87c25fa)
-![fondo](https://github.com/user-attachments/assets/899b8cd7-038b-423d-bf74-efee8e396c63)
-
-
 
 
 
