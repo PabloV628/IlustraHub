@@ -33,4 +33,9 @@
 ![polly](https://github.com/user-attachments/assets/73b79b40-54ae-4b30-94a1-34896e383a98)
 ![demon](https://github.com/user-attachments/assets/04706b0a-7ee2-4190-bbf2-fd53e9b4a4d5)
 
+![fotoperfil](https://github.com/user-attachments/assets/85427a6a-5a83-45ec-923b-104966d90340)
+
+
+
+
 
