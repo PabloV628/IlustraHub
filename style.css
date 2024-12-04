@@ -1,40 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
 :root {
 
   --bs-danger-rgb: 246,237,228;
   --bs-dark-rgb: 40, 27, 30  ; 
   --bs-primary-rgb: 37, 150, 190;
-  --bs-font-sans-serif:"Roboto Slab", serif;
+  --bs-primary-font: "Courgette", cursive; /* Fuente para los títulos */
+  --bs-body-font: "Roboto Slab", serif; /* Fuente para el cuerpo */
   --bs-body-font-family: var(--bs-font-sans-serif);
+}
+body {
+  font-family: var(--bs-body-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--bs-primary-font);
+}
+
+.active {
+  position: relative; /* Necesario para el pseudo-elemento */
+  color: white; /* Cambia el color del texto del activo */
+  font-weight: bold; /* Hace el texto más destacado */
+}
+
+.active::after {
+  content: ''; /* Crea el marcador de página */
+  position: absolute;
+  bottom: -5px; /* Ajusta la posición vertical debajo del texto */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px; /* Ancho del marcador */
+  height: 5px; /* Alto del marcador */
+  background-color: rgb(var(--bs-primary-rgb)); /* Usa la variable de color correctamente */
+  border-radius: 2px; /* Bordes redondeados para parecerse a un marcador */
 }
 
 
 .cards-container {
     padding-top: 100px; /* el encabezado no se tapa */
     height: 100vh;
-    overflow: hidden;
+
 }
 
-.card {
-    position: absolute;
+/* .card {
     width: 200px; 
     transition: transform 0.6s ease, z-index 0s; 
     border: none; 
-    background: transparent; 
-    z-index: 1; 
-    outline: none;
-}
 
-.card-img-top {
-    border: none; 
-    height: auto; 
-}
+} */
 
-.card-body {
-    border: none;
+.card {
+  overflow: hidden; /* Oculta el contenido fuera del área de la tarjeta */
+  transition: transform 0.6s ease, z-index 0s; 
+  border: none; 
 }
 
 .card:hover {
     transform: scale(1.05); 
     z-index: 10; 
+}
+
+.display-1{
+    font-size: calc(1.625rem + 5vw);
+    font-weight: 150;
+  } 
+  
+.breadcrumb-item::before {
+  color: white; /* Cambia el color del separador */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;  /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste preciso al centro */
+    opacity: 0; /* El texto está oculto por defecto */
+    transition: opacity 0.3s ease-in-out; /* Suaviza la transición de visibilidad */
+    text-align: center; /* Centra el texto dentro del <p> */
+    color: white; /* Color del texto, puedes ajustarlo */
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    padding: 0 10px; /* Añade algo de padding para evitar que el texto quede pegado a los bordes */
+    width: 100%; /* Para asegurarnos de que el texto ocupe el ancho completo de la imagen */
+    box-sizing: border-box; /* Asegura que el padding se incluya dentro del tamaño total */
+}
+
+.card:hover .card-text {
+  opacity: 1; /* Hace visible el texto cuando la tarjeta se pasa por encima */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro al pasar el mouse */
 }
