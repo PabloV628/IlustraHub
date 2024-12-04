@@ -162,45 +162,48 @@ autoria.innerHTML = `
                     principal.innerHTML = '';
         
                     data.forEach((d, i) => {
-                        // Crear contenedor de tarjeta
-                        const card = document.createElement("div");
-                        card.classList.add("card", `${d.signo}`, "position-absolute");
-        
-                        // Configurar posición aleatoria de las tarjetas
-                        const topPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
-                        const leftPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
-        
-                        card.style.top = `${topPosition}%`;
-                        card.style.left = `${leftPosition}%`;
-        
-                        // Crear el contenido de la tarjeta
-                        const cardImg = document.createElement("img");
-                        cardImg.src = d.foto;
-                        cardImg.classList.add("card-img-top");
-                        cardImg.alt = d.fecha;
-        
-                        const cardBody = document.createElement("div");
-                        cardBody.classList.add("card-body");
-        
-                        const cardText = document.createElement("p");
-                        cardText.classList.add("card-text");
-        
-                        // Agregar el contenido del texto
-                        const cardLink = document.createElement("a");
-                        cardLink.href = d.link;
-                        cardLink.classList.add("link-danger", "link-offset-2", "link-offset-3-hover", "link-underline", "link-underline-opacity-0", "link-underline-opacity-75-hover", "stretched-link");
-                        cardLink.title = d.nombre;
-                        cardLink.textContent = d.nombre;
-        
-                        // Armar la estructura de la tarjeta
-                        cardText.appendChild(cardLink);
-                        cardBody.appendChild(cardText);
-                        card.appendChild(cardImg);
-                        card.appendChild(cardBody);
-        
-                        // Agregar la tarjeta al contenedor principal
-                        principal.appendChild(card);
-                    });
+    // Crear contenedor de tarjeta
+    const card = document.createElement("div");
+    card.classList.add("card", `${d.signo}`, "position-absolute");
+
+    // Configurar posición aleatoria de las tarjetas
+    const topPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
+    const leftPosition = Math.random() * 90; // Aleatorio entre 0 y 90%
+
+    card.style.top = `${topPosition}%`;
+    card.style.left = `${leftPosition}%`;
+
+    // Crear el contenido de la tarjeta
+    const cardImg = document.createElement("img");
+    cardImg.src = d.foto;
+    cardImg.classList.add("card-img-top");
+    cardImg.alt = d.fecha;
+
+  
+    cardImg.style.width = "200px";
+    cardImg.style.height = "200px"; 
+    cardImg.style.objectFit = "contain"; 
+
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+
+    const cardText = document.createElement("p");
+    cardText.classList.add("card-text");
+
+    const cardLink = document.createElement("a");
+    cardLink.href = d.link;
+    cardLink.classList.add("link-danger", "link-offset-2", "link-offset-3-hover", "link-underline", "link-underline-opacity-0", "link-underline-opacity-75-hover", "stretched-link");
+    cardLink.title = d.nombre;
+    cardLink.textContent = d.nombre;
+
+    cardText.appendChild(cardLink);
+    cardBody.appendChild(cardText);
+    card.appendChild(cardImg);
+    card.appendChild(cardBody);
+
+    // Agregar la tarjeta al contenedor principal
+    principal.appendChild(card);
+});
         
                     // Función de selección (no está definida, asumo que es parte del flujo)
                     seleccionables();
